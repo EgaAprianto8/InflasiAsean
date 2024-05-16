@@ -16,18 +16,78 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+html{
+  scroll-behavior: smooth;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+.bg-hero {
+  background-image: url("https://i.ibb.co/cyLSF4d/ki-10.jpg");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-center {
+  background-image: url("https://i.ibb.co/kc1Q3zv/ki-3.jpg");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.bg-hero-hp {
+  background-image: url("https://i.ibb.co/2PJRYs8/heroHP.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-hero-news {
+  background-image: url("https://i.ibb.co/XfHj2Q8/News-Letter.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-hero-pillars {
+  background-image: url("https://i.ibb.co/hKN31h6/Pillars.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-namaz {
+  background-image: url("https://i.ibb.co/7gTr1DW/namaz-timings.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-img {
+  background-image: url("https://i.postimg.cc/qq6wsk9V/test.jpg");
+  background-position: 90% center; /* Mengambil bagian ujung kanan gambar */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Jika Anda ingin memastikan bahwa gambar tidak diambil bagian ujung kirinya pada tampilan mobile, Anda bisa menambahkan media query seperti ini: */
+@media (max-width: 640px) {
+  .hero-img {
+    background-position:75%; 
+  }
+  .bg-hero {
+    background-position:50%; 
+  }
+  .bg-hero-hp {
+    background-position:50%; 
+  }
+  .bg-hero-news {
+    background-position:50%;
+  }
+  .bg-hero-pillars {
+    background-position:50%;
   }
 }
+
