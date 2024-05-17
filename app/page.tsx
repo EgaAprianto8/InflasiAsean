@@ -9,8 +9,8 @@ import Image from "next/image";
 export default function Home() {
   return (      <>      
     <Hero 
-          heading='"Dalam era teknologi yang terus berkembang, perlindungan data sensitif menjadi prioritas utama. Melalui aplikasi Steganografi AES-LSB, gabungan antara enkripsi AES dan penyembunyian pesan LSB, kami menjaga kerahasiaan data dengan kuat, meminimalkan risiko kebocoran informasi dalam dunia yang penuh dengan ancaman siber."' 
-          message='~Steganografi Project'
+          heading='"Inflasi yang tidak terkendali dapat merusak stabilitas ekonomi dan meningkatkan biaya hidup di negara-negara ASEAN yang berakibat memperburuk kemiskinan. FutureFlow ASEAN memanfaatkan metode Secant untuk memprediksi inflasi 2025 yang menjadi alat bagi pemegang kebijakan dan pelaku ekonomi untuk lebih efektif mengelola dan mengantisipasi dampak inflasi."' 
+          message='~FutureFlow ASEAN'
     />
     <About/>
     <Service/>
