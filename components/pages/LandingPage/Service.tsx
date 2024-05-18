@@ -37,14 +37,14 @@ const Service = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-semibold"
             >
-              Our Algorithm
+              Embracing About
             </motion.span>
             <motion.span
               initial={{ y: -50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Is All YOU <span className="font-bold text-blue-500">NEED</span>
+              Our<span className="font-bold text-blue-500">Algorithm</span>
             </motion.span>
           </h1>
         </div>
