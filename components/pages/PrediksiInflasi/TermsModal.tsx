@@ -26,66 +26,75 @@ const AseanModal = () => {
             className="bg-white rounded-lg p-6 w-96 max-w-full z-[9999]"
             onClick={(e) => e.stopPropagation()} // Prevent modal close on clicking inside modal
           >
-            <h2 className="text-lg font-semibold mb-4">ASEAN Countries</h2>
-            <p className="text-base leading-relaxed text-gray-500 mb-6">
+            <h2 className="text-lg font-semibold text-center mb-4">ASEAN Countries</h2>
+            <p className="text-base text-center leading-relaxed text-gray-500 mb-6">
               Select a country to visit its page:
             </p>
-            <div className="space-y-2">
+            <div className="flex justify-center flex-row gap-2">
+            <div className='flex flex-col gap-2'>
               <Link href="/PrediksiInflasi/Brunei">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Brunei
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Cambodia">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Cambodia
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Indonesia">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Indonesia
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Laos">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Laos
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Malaysia">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Malaysia
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Myanmar">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Myanmar
                 </button>
               </Link>
+            </div>  
+              <div className='flex flex-col gap-2'>
               <Link href="/PrediksiInflasi/Philippines">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Philippines
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Singapore">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Singapore
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Thailand">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Thailand
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Vietnam">
-                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-md hover:bg-gray-100">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
                   Vietnam
                 </button>
               </Link>
+              <Link href="/PrediksiInflasi/TimorLeste">
+                <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
+                  TimorLeste
+                </button>
+              </Link>
+              </div>
             </div>
             <div className="flex justify-end mt-4">
               <button 
                 onClick={() => setOpenModal(false)} 
-                className="bg-gray-200 hover:bg-gray-300 text-black py-2 px-4 rounded-md"
+                className="bg-gray-200 hover:bg-gray-300 text-black py-2 px-4 rounded-xl"
               >
                 Close
               </button>

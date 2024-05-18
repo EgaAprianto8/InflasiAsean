@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Card } from "flowbite-react";
+import Link from "next/link";
 
 const Information = () => {
   const [showMore, setShowMore] = useState<Array<boolean>>([
@@ -11,6 +12,20 @@ const Information = () => {
     false,
     false,
   ]);
+
+  const countries = [
+    'Brunei',
+    'Cambodia',
+    'Indonesia',
+    'Laos',
+    'Malaysia',
+    'Myanmar',
+    'Philippines',
+    'Singapore',
+    'Thailand',
+    'Vietnam',
+    'TimorLeste'
+  ];
 
   // Fungsi untuk mengubah status showMore pada indeks tertentu
   const toggleShowMore = (index: number) => {
@@ -20,7 +35,25 @@ const Information = () => {
   };
   return (
     <section id="watermarking">
-      <div className="relative flex flex-col w-full px-4 sm:px-10 xl:container justify-center items-center my-20">
+      <div className="relative flex lg:flex-row flex-col gap-10 w-full px-4 sm:px-10 xl:container justify-center items-center my-20">
+      <div className="flex justify-center flex-col items-center min-h-screen lg:mt-56">
+        <h2 className="text-2xl font-semibold mb-4">ASEAN Countries</h2>
+        <p className="text-sm leading-relaxed text-gray-500 mb-8">
+          Select a country to visit its inflation prediction page:
+        </p>
+      <Card className="w-96  p-4">
+        <div className="space-y-2 flex flex-col gap-2">
+          {countries.map((country) => (
+            <Link key={country} href={`/PrediksiInflasi/${country}`}>
+              <button className="w-full bg-white border border-black rounded-xl py-2 text-left px-4 hover:bg-gray-100">
+                {country}
+              </button>
+            </Link>
+          ))}
+        </div>
+      </Card>
+    </div>
+    <div className="flex flex-col">
         <div className="container flex justify-center items-center mb-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl uppercase flex flex-col gap-y-2 text-center">
             <motion.span
@@ -43,7 +76,7 @@ const Information = () => {
           </h1>
         </div>
         <Card className="h-full ">
-        <p className="w-full text-justify text-2xl mt-4 px-8">
+        <p className="w-full text-justify sm:text-2xl mt-4 px-8">
           Untuk menyediakan data yang akurat dan terpercaya mengenai inflasi di
           negara-negara ASEAN, kami menggunakan dataset yang diperoleh dari The
           World Bank. The World Bank adalah lembaga keuangan internasional yang
@@ -58,6 +91,7 @@ const Information = () => {
           lebih baik.
         </p>
         </Card>
+    </div>
 
 
         {/* <div className="container mx-auto relative w-full h-full">
