@@ -37,9 +37,9 @@ const AseanModal = () => {
                   Brunei
                 </button>
               </Link>
-              <Link href="/PrediksiInflasi/Cambodia">
+              <Link href="/PrediksiInflasi/Kamboja">
                 <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
-                  Cambodia
+                  Kamboja
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Indonesia">
@@ -64,14 +64,14 @@ const AseanModal = () => {
               </Link>
             </div>  
               <div className='flex flex-col gap-2'>
-              <Link href="/PrediksiInflasi/Philippines">
+              <Link href="/PrediksiInflasi/Filipina">
                 <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
-                  Philippines
+                  Filipina
                 </button>
               </Link>
-              <Link href="/PrediksiInflasi/Singapore">
+              <Link href="/PrediksiInflasi/SIngapura">
                 <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
-                  Singapore
+                  SIngapura
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Thailand">

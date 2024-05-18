@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (      <>      
     <Hero 
-          heading='"Inflasi yang tidak terkendali dapat merusak stabilitas ekonomi dan meningkatkan biaya hidup di negara-negara ASEAN yang berakibat memperburuk kemiskinan. FutureFlow ASEAN memanfaatkan metode Secant untuk memprediksi inflasi 2025 yang menjadi alat bagi pemegang kebijakan dan pelaku ekonomi untuk lebih efektif mengelola dan mengantisipasi dampak inflasi."' 
+          heading='"Inflasi yang tidak terkendali dapat merusak stabilitas ekonomi dan meningkatkan biaya hidup di negara-negara ASEAN. FutureFlow ASEAN menggunakan metode Secant untuk memprediksi inflasi 2025, membantu pemegang kebijakan dan pelaku ekonomi mengelola dampak inflasi lebih efektif."' 
           message='~FutureFlow ASEAN'
     />
     <About/>

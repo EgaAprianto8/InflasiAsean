@@ -5,13 +5,14 @@ import Information from '@/components/pages/PrediksiInflasi/Information'
 import Pengenalan from '@/components/pages/PrediksiInflasi/Pengenalan'
 import AseanModal from '@/components/pages/PrediksiInflasi/TermsModal'
 import FooterPI from '@/components/pages/PrediksiInflasi/layout/FooterPI'
+import PengenalanVietnam from '@/components/pages/PrediksiInflasi/negara/Pengenalan/PengenalanVietnam'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
       <HeroSectionPI/>
-      <Pengenalan/>
+      <PengenalanVietnam/>
       <AseanModal/>
       <Information/>
       <Contact/>
