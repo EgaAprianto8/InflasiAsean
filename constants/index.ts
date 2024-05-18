@@ -227,3 +227,23 @@ export const indonesia = [
   { name: '2025', Indonesia: 1.57, Asean: 2 },
 ];
 
+export const timorleste = [
+  { name: '2009', Timorleste: 0.7, Asean: 1.7 },
+  { name: '2010', Timorleste: 6.8, Asean: 4.6 },
+  { name: '2011', Timorleste: 13.5, Asean: 6.4 },
+  { name: '2012', Timorleste: 11.8, Asean: 4.4 },
+  { name: '2013', Timorleste: 11.0, Asean: 4.5 },
+  { name: '2014', Timorleste: 0.9, Asean: 3.1 },
+  { name: '2015', Timorleste: 0.7, Asean: 2.0 },
+  { name: '2016', Timorleste: -1.5, Asean: 1.7 },
+  { name: '2017', Timorleste: 0.5, Asean: 2.2 },
+  { name: '2018', Timorleste: 2.3, Asean: 2.5 },
+  { name: '2019', Timorleste: 1.0, Asean: 2.2 },
+  { name: '2020', Timorleste: 0.5, Asean: 2.0 },
+  { name: '2021', Timorleste: 3.8, Asean: 2.8 },
+  { name: '2022', Timorleste: 7.0, Asean: 7.6 },
+  { name: '2023', Timorleste: 6.0, Asean: 6.7 },
+  { name: '2024', Timorleste: 2.5, Asean: 3.7 },
+  { name: '2025', Timorleste: -1.44, Asean: 2 },
+];
+
