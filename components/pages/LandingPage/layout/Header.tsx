@@ -49,7 +49,7 @@ const Header = () => {
                 width={40}
                 height={40}
                 alt="Logo Company"
-                className="sm:ml-4 sm:p-4 mr-2 ml-1 p-2 w-[50px] h-[35px] sm:w-auto sm:h-auto "
+                className="sm:ml-4 sm:p-4 mr-2 ml-1 p-2 w-[50px] h-[35px] sm:w-auto sm:h-auto object-cover"
               />
               <div className='ml-2 sm:ml-8 text-sm sm:tracking-[2.5px]' style={{color:`${textColor}`}}>
                 <h2 className='font-bold'>FutureFlow ASEAN</h2>            
