@@ -5,7 +5,7 @@ import Information from '@/components/pages/PrediksiInflasi/Information'
 import Pengenalan from '@/components/pages/PrediksiInflasi/Pengenalan'
 import AseanModal from '@/components/pages/PrediksiInflasi/TermsModal'
 import FooterPI from '@/components/pages/PrediksiInflasi/layout/FooterPI'
-import Indonesia from '@/components/pages/PrediksiInflasi/negara/Indonesia'
+import Indonesia from '@/components/pages/PrediksiInflasi/negara/grafik/Indonesia'
 import React from 'react'
 
 const page = () => {

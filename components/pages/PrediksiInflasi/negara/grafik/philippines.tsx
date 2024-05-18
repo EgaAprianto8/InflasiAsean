@@ -12,7 +12,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
-import { indonesia } from '@/constants/index';
+import { philippines } from '@/constants/index';
 
 function GridItem({ title, children }: GridItemProps) {
   return (
@@ -29,7 +29,7 @@ const CustomTooltip = ({ active, payload, label }: Tooltips) => {
       <div className="p-4 bg-white border border-gray-300 flex flex-col gap-4 rounded-md shadow-lg font-semibold">
         <p className="text-medium text-lg text-gray-900">{label}</p>
         <p className="text-sm text-green-500">
-          Indonesia:
+          Philippines:
           <span className="ml-2">{payload[0].value}%</span>
         </p>
         <p className="text-sm text-blue-500">
@@ -42,15 +42,15 @@ const CustomTooltip = ({ active, payload, label }: Tooltips) => {
   return null;
 };
 
-const Indonesia = () => {
+const Philippines = () => {
   return (
     <div className="container w-full min-h-screen flex flex-col justify-center items-center py-6 px-8 font-semibold">
-      <GridItem title="Negara Indonesia">
+      <GridItem title="Negara Philippines">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             width={500}
             height={300}
-            data={indonesia}
+            data={philippines}
             margin={{
               top: 10,
               right: 30,
@@ -59,12 +59,12 @@ const Indonesia = () => {
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
+            <XAxis dataKey="name"  />
             <YAxis />
             <Tooltip content={<CustomTooltip active={undefined} payload={undefined} label={undefined} />} />
             <Legend />
-            <Line type="monotone" dataKey="Indonesia" stroke="#1dbbb4" />
-            <Line type="monotone" dataKey="Asean" stroke="#3b82f6" />
+            <Line type="monotone" dataKey="Philippines" stroke="#1dbbb4" strokeWidth={2.5} />
+            <Line type="monotone" dataKey="Asean" stroke="#3b82f6" strokeWidth={2.5}/>
           </LineChart>
         </ResponsiveContainer>
       </GridItem>
@@ -72,4 +72,4 @@ const Indonesia = () => {
   );
 }
 
-export default Indonesia;
+export default Philippines;
