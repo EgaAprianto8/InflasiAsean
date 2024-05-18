@@ -196,7 +196,7 @@ function Contact() {
               </motion.span>
             </h1>
               <h4 className="text-lg text-blue-500">Get In Touch</h4>
-              <h2 className="text-4xl sm:text-5xl">Let&apos;s Encrypt Together!</h2>
+              <h2 className="text-4xl sm:text-5xl">Let&apos;s Awarness Together!</h2>
               <motion.div
                 variants={containerShow}
                 initial="initial"
