@@ -34,7 +34,7 @@ const Information = () => {
     setShowMore(newShowMore);
   };
   return (
-    <section id="watermarking">
+    <section id="infoinflasi">
       <div className="relative flex lg:flex-row flex-col gap-10 w-full px-4 sm:px-10 xl:container justify-center items-center mb-20 -mt-20">
       <div className="flex justify-center flex-col items-center min-h-screen xl:mt-56 sm:mt-20">
         <h2 className="text-2xl font-semibold mb-4">ASEAN Countries</h2>

@@ -69,9 +69,9 @@ const AseanModal = () => {
                   Filipina
                 </button>
               </Link>
-              <Link href="/PrediksiInflasi/SIngapura">
+              <Link href="/PrediksiInflasi/Singapura">
                 <button className="block w-full bg-white border border-black py-2 text-left px-4 rounded-xl hover:bg-gray-100">
-                  SIngapura
+                  Singapura
                 </button>
               </Link>
               <Link href="/PrediksiInflasi/Thailand">
