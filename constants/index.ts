@@ -27,74 +27,86 @@ export const contacts = [
   },
 ];
 
-export const navigation = [
+export const indonesia = [
   {
-    id: 'home',
-    href: '#hero',
-    title: 'Home'
+    name: '2009',
+    Indonesia: 4.4 ,
+    Asean: 1.7,
   },
   {
-    id: 'about',
-    href: '#about',
-    title: 'About Us'
+    name: '2010',
+    Indonesia: 5.1 ,
+    Asean: 4.6,
   },
   {
-    id: 'services',
-    href: '#services',
-    title: 'Services'
+    name: '2011',
+    Indonesia: 5.4 ,
+    Asean: 6.4,
   },
   {
-    id: 'process',
-    href: '#process',
-    title: 'Process'
+    name: '2012',
+    Indonesia: 4.5 ,
+    Asean: 4.4,
   },
   {
-    id: 'projects',
-    href: '#projects',
-    title: 'Projects'
+    name: '2013',
+    Indonesia: 6.4 ,
+    Asean: 4.5,
   },
   {
-    id: 'contact',
-    href: '#contact',
-    title: 'Contact Me'
-  },
-]
-
-export const works = [
-  {
-    id: 'work-1',
-    imageUrl: '/images/works/app-development.webp',
-    type: 'App Development',
-    title: 'Title'
+    name: '2014',
+    Indonesia: 6.4 ,
+    Asean: 3.1,
   },
   {
-    id: 'work-2',
-    imageUrl: '/images/works/digital-marketing-seo.jpg',
-    type: 'Digital Marketing & SEO',
-    title: 'Title'
+    name: '2015',
+    Indonesia: 6.4 ,
+    Asean: 2.0,
   },
   {
-    id: 'work-3',
-    imageUrl: '/images/works/graphic-design.jpg',
-    type: 'Graphic Design',
-    title: 'Title'
+    name: '2016',
+    Indonesia: 3.5 ,
+    Asean: 1.7,
   },
   {
-    id: 'work-4',
-    imageUrl: '/images/works/social-media.jpg',
-    type: 'Soc-Med Management',
-    title: 'Title'
+    name: '2017',
+    Indonesia: 3.8 ,
+    Asean: 2.2,
   },
   {
-    id: 'work-5',
-    imageUrl: '/images/works/video-editing.webp',
-    type: 'Video Editing',
-    title: 'Title'
+    name: '2018',
+    Indonesia: 3.2 ,
+    Asean: 2.5,
   },
   {
-    id: 'work-6',
-    imageUrl: '/images/works/web-design.png',
-    type: 'Web Design',
-    title: 'Title'
+    name: '2019',
+    Indonesia: 2.8,
+    Asean: 2.2,
   },
+  {
+    name: '2020',
+    Indonesia: 1.9 ,
+    Asean: 2.8,
+  },
+  {
+    name: '2021',
+    Indonesia: 1.6 ,
+    Asean: 2.8,
+  },
+  {
+    name: '2022',
+    Indonesia: 4.2 ,
+    Asean: 7.6,
+  },
+  {
+    name: '2023',
+    Indonesia: 2.5 ,
+    Asean: 6.7,
+  },
+  {
+    name: '2024',
+    Indonesia: 2.5,
+    Asean: 3.7,
+  },
+  
 ];

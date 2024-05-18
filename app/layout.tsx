@@ -8,8 +8,8 @@ import Footer from '@/components/pages/LandingPage/layout/Footer';
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Keamanan Informasi',
-  description: 'Steganografi LSB dengan Metode AES',
+  title: 'Future Flow Asean',
+  description: 'Inflasi ASEAN adalah tantangan',
 }
 export default function RootLayout({
   children,
