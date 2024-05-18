@@ -87,24 +87,24 @@ export const malaysia = [
   { name: '2025', Malaysia: -1.14, Asean: 2 },
 ];
 
-export const singapore = [
-  { name: '2009', Singapore: 0.6, Asean: 1.7 },
-  { name: '2010', Singapore: 2.8, Asean: 4.6 },
-  { name: '2011', Singapore: 5.2, Asean: 6.4 },
-  { name: '2012', Singapore: 4.6, Asean: 4.4 },
-  { name: '2013', Singapore: 2.4, Asean: 4.5 },
-  { name: '2014', Singapore: 1.0, Asean: 3.1 },
-  { name: '2015', Singapore: -0.5, Asean: 2.0 },
-  { name: '2016', Singapore: -0.5, Asean: 1.7 },
-  { name: '2017', Singapore: 0.6, Asean: 2.2 },
-  { name: '2018', Singapore: 0.5, Asean: 2.5 },
-  { name: '2019', Singapore: 0.6, Asean: 2.2 },
-  { name: '2020', Singapore: -0.2, Asean: 2.0 },
-  { name: '2021', Singapore: 2.3, Asean: 2.8 },
-  { name: '2022', Singapore: 6.1, Asean: 7.6 },
-  { name: '2023', Singapore: 5.5, Asean: 6.7 },
-  { name: '2024', Singapore: 3.5, Asean: 3.7 },
-  { name: '2025', Singapore: -0.53, Asean: 2 },
+export const singapura = [
+  { name: '2009', Singapura: 0.6, Asean: 1.7 },
+  { name: '2010', Singapura: 2.8, Asean: 4.6 },
+  { name: '2011', Singapura: 5.2, Asean: 6.4 },
+  { name: '2012', Singapura: 4.6, Asean: 4.4 },
+  { name: '2013', Singapura: 2.4, Asean: 4.5 },
+  { name: '2014', Singapura: 1.0, Asean: 3.1 },
+  { name: '2015', Singapura: -0.5, Asean: 2.0 },
+  { name: '2016', Singapura: -0.5, Asean: 1.7 },
+  { name: '2017', Singapura: 0.6, Asean: 2.2 },
+  { name: '2018', Singapura: 0.5, Asean: 2.5 },
+  { name: '2019', Singapura: 0.6, Asean: 2.2 },
+  { name: '2020', Singapura: -0.2, Asean: 2.0 },
+  { name: '2021', Singapura: 2.3, Asean: 2.8 },
+  { name: '2022', Singapura: 6.1, Asean: 7.6 },
+  { name: '2023', Singapura: 5.5, Asean: 6.7 },
+  { name: '2024', Singapura: 3.5, Asean: 3.7 },
+  { name: '2025', Singapura: -0.53, Asean: 2 },
 ];
 
 export const philippines = [

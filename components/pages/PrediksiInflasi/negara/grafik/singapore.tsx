@@ -12,7 +12,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { brunei, singapore } from "@/constants/index";
+import { brunei, singapura } from "@/constants/index";
 import { motion } from "framer-motion";
 
 function GridItem({ title, children }: GridItemProps) {
@@ -64,7 +64,7 @@ const Singapura = () => {
           <LineChart
             width={500}
             height={300}
-            data={singapore}
+            data={singapura}
             margin={{
               top: 10,
               right: 30,
