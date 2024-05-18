@@ -6,6 +6,7 @@ import Pengenalan from '@/components/pages/PrediksiInflasi/Pengenalan'
 import AseanModal from '@/components/pages/PrediksiInflasi/TermsModal'
 import FooterPI from '@/components/pages/PrediksiInflasi/layout/FooterPI'
 import PengenalanMalaysia from '@/components/pages/PrediksiInflasi/negara/Pengenalan/PengenalanMalaysia'
+import Malaysia from '@/components/pages/PrediksiInflasi/negara/grafik/malaysia'
 import React from 'react'
 
 const page = () => {
@@ -14,6 +15,7 @@ const page = () => {
       <HeroSectionPI/>
       <PengenalanMalaysia/>
       <AseanModal/>
+      <Malaysia/>
       <Information/>
       <Contact/>
     </div>

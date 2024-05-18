@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { GridItemProps, Tooltips } from '@/components/lib/types';
+import React from "react";
+import { GridItemProps, Tooltips } from "@/components/lib/types";
 import {
   LineChart,
   Line,
@@ -11,8 +11,9 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-} from 'recharts';
-import { philippines } from '@/constants/index';
+} from "recharts";
+import { philippines } from "@/constants/index";
+import { motion } from "framer-motion";
 
 function GridItem({ title, children }: GridItemProps) {
   return (
@@ -45,6 +46,19 @@ const CustomTooltip = ({ active, payload, label }: Tooltips) => {
 const Philippines = () => {
   return (
     <div className="container w-full min-h-screen flex flex-col justify-center items-center py-6 px-8 font-semibold">
+      <div className="container flex justify-center items-center my-10">
+        <h1 className="text-xl sm:text-3xl md:text-5xl uppercase flex flex-row gap-y-2 text-center">
+          <motion.span
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="font-semibold"
+          >
+            PREDIKSI <span className="font-bold">INFLASI </span>
+            <span className="font-bold text-[#1dbbb4]"> 2025</span>
+          </motion.span>
+        </h1>
+      </div>
       <GridItem title="Negara Philippines">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
@@ -59,17 +73,35 @@ const Philippines = () => {
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name"  />
+            <XAxis dataKey="name" />
             <YAxis />
-            <Tooltip content={<CustomTooltip active={undefined} payload={undefined} label={undefined} />} />
+            <Tooltip
+              content={
+                <CustomTooltip
+                  active={undefined}
+                  payload={undefined}
+                  label={undefined}
+                />
+              }
+            />
             <Legend />
-            <Line type="monotone" dataKey="Philippines" stroke="#1dbbb4" strokeWidth={2.5} />
-            <Line type="monotone" dataKey="Asean" stroke="#3b82f6" strokeWidth={2.5}/>
+            <Line
+              type="monotone"
+              dataKey="Philippines"
+              stroke="#1dbbb4"
+              strokeWidth={2.5}
+            />
+            <Line
+              type="monotone"
+              dataKey="Asean"
+              stroke="#3b82f6"
+              strokeWidth={2.5}
+            />
           </LineChart>
         </ResponsiveContainer>
       </GridItem>
     </div>
   );
-}
+};
 
 export default Philippines;

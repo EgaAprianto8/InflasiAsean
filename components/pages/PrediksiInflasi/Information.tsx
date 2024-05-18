@@ -35,7 +35,7 @@ const Information = () => {
   };
   return (
     <section id="watermarking">
-      <div className="relative flex lg:flex-row flex-col gap-10 w-full px-4 sm:px-10 xl:container justify-center items-center my-20">
+      <div className="relative flex lg:flex-row flex-col gap-10 w-full px-4 sm:px-10 xl:container justify-center items-center mb-20 -mt-20">
       <div className="flex justify-center flex-col items-center min-h-screen xl:mt-56 sm:mt-20">
         <h2 className="text-2xl font-semibold mb-4">ASEAN Countries</h2>
         <p className="text-sm leading-relaxed text-gray-500 mb-8">
