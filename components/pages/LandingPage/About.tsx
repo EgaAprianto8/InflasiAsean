@@ -17,7 +17,7 @@ const About = () => {
         <div className="absolute bottom-[10%] left-[-100px] h-[80%] w-[300px] aspect-video bg-colorfull-blue blur-[250px]" />
       </div>
       <div className='flex flex-wrap justify-evenly -mt-[10rem] container mx-auto h-auto'>
-        {/* <div className='flex items-center justify-center w-[250px] sm:w-[500px] md:w-1/4 lg:w-1/4 h-[650px] rounded-md sm:mt-[200px]'>
+        <div className='flex items-center justify-center w-[250px] sm:w-[500px] md:w-1/4 lg:w-1/4 h-[650px] rounded-md sm:mt-[200px]'>
           <Carousel slideInterval={5000} >
             <img
               alt="..."
@@ -35,7 +35,7 @@ const About = () => {
               className='object-contain rounded-md'
             />
           </Carousel>
-        </div> */}
+        </div>
       
         <div className="px-4 py-4 sm:py-20 z-50">
           <div className="sm:container overflow-x-hidden">

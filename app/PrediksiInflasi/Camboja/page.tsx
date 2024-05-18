@@ -5,14 +5,14 @@ import Information from '@/components/pages/PrediksiInflasi/Information'
 import Pengenalan from '@/components/pages/PrediksiInflasi/Pengenalan'
 import AseanModal from '@/components/pages/PrediksiInflasi/TermsModal'
 import FooterPI from '@/components/pages/PrediksiInflasi/layout/FooterPI'
-import PengenalanThailand from '@/components/pages/PrediksiInflasi/negara/Pengenalan/PengenalanThailand'
+import PengenalanKamboja from '@/components/pages/PrediksiInflasi/negara/Pengenalan/PengenalanKamboja'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
       <HeroSectionPI/>
-      <PengenalanThailand/>
+      <PengenalanKamboja/>
       <AseanModal/>
       <Information/>
       <Contact/>
