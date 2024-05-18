@@ -185,14 +185,14 @@ function Contact() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                Have
+                Punya
               </motion.span>
               <motion.span
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <span className='font-bold text-blue-500'>Any Question?</span>
+                <span className='font-bold text-blue-500'>Pertanyaan?</span>
               </motion.span>
             </h1>
               <h4 className="text-lg text-blue-500">Get In Touch</h4>

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { GridItemProps, Tooltips } from '@/components/lib/types';
+import React from "react";
+import { GridItemProps, Tooltips } from "@/components/lib/types";
 import {
   LineChart,
   Line,
@@ -11,8 +11,8 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-} from 'recharts';
-import { indonesia } from '@/constants/index';
+} from "recharts";
+import {  cambodia } from "@/constants/index";
 import { motion } from "framer-motion";
 
 function GridItem({ title, children }: GridItemProps) {
@@ -30,7 +30,7 @@ const CustomTooltip = ({ active, payload, label }: Tooltips) => {
       <div className="p-4 bg-white border border-gray-300 flex flex-col gap-4 rounded-md shadow-lg font-semibold">
         <p className="text-medium text-lg text-gray-900">{label}</p>
         <p className="text-sm text-green-500">
-          cambodia:
+          Kamboja:
           <span className="ml-2">{payload[0].value}%</span>
         </p>
         <p className="text-sm text-blue-500">
@@ -46,7 +46,7 @@ const CustomTooltip = ({ active, payload, label }: Tooltips) => {
 const Cambodia = () => {
   return (
     <div className="container w-full min-h-screen flex flex-col justify-center items-center py-6 px-8 font-semibold">
-              <div className="container flex justify-center items-center my-10">
+        <div className="container flex justify-center items-center my-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl uppercase flex flex-row gap-y-2 text-center">
             <motion.span
               initial={{ x: -100, opacity: 0 }}
@@ -59,12 +59,12 @@ const Cambodia = () => {
 
           </h1>
         </div>
-      <GridItem title="Negara cambodia">
+      <GridItem title="Negara Kamboja">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             width={500}
             height={300}
-            data={indonesia}
+            data={cambodia}
             margin={{
               top: 10,
               right: 30,
@@ -73,17 +73,35 @@ const Cambodia = () => {
             }}
           >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name"  />
+            <XAxis dataKey="name" />
             <YAxis />
-            <Tooltip content={<CustomTooltip active={undefined} payload={undefined} label={undefined} />} />
+            <Tooltip
+              content={
+                <CustomTooltip
+                  active={undefined}
+                  payload={undefined}
+                  label={undefined}
+                />
+              }
+            />
             <Legend />
-            <Line type="monotone" dataKey="cambodia" stroke="#1dbbb4" strokeWidth={2.5} />
-            <Line type="monotone" dataKey="Asean" stroke="#3b82f6" strokeWidth={2.5}/>
+            <Line
+              type="monotone"
+              dataKey="Cambodia"
+              stroke="#1dbbb4"
+              strokeWidth={2.5}
+            />
+            <Line
+              type="monotone"
+              dataKey="Asean"
+              stroke="#3b82f6"
+              strokeWidth={2.5}
+            />
           </LineChart>
         </ResponsiveContainer>
       </GridItem>
     </div>
   );
-}
+};
 
 export default Cambodia;
