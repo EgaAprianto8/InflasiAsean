@@ -44,7 +44,7 @@ const Service = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Our<span className="font-bold text-blue-500">Algorithm</span>
+              Our<span className="font-bold text-blue-500"> Algorithm</span>
             </motion.span>
           </h1>
         </div>
@@ -66,7 +66,7 @@ const Service = () => {
                   <p>
                     {index === 0
                       ? "One-step Secand"
-                      : "Interpolasi"}
+                      : "Interpolasi Linear"}
                   </p>
                 </h5>
                 <p
@@ -76,7 +76,7 @@ const Service = () => {
                 >
                   {index === 0
                     ? "Algoritma one-step Secant adalah metode numerik untuk mencari akar fungsi nonlinier. Berbeda dengan metode lain seperti Newton-Raphson yang membutuhkan turunan fungsi, algoritma ini menggunakan pendekatan dua titik awal yang mendekati akar. Proses dimulai dengan menentukan dua titik awal, kemudian evaluasi nilai fungsi di kedua titik tersebut. Dengan menggunakan rumus Secant, perkiraan akar baru dihitung dan proses diulangi hingga akar ditemukan atau konvergensi tercapai. Algoritma ini dipilih karena tidak memerlukan turunan fungsi, konvergen relatif cepat, dan efisien dalam komputasi."
-                    : "Metode interpolasi digunakan untuk memperkirakan tingkat inflasi pada titik waktu yang belum ada datanya berdasarkan data historis yang tersedia. Proses ini dimulai dengan mengumpulkan data inflasi historis, kemudian menggunakan metode interpolasi seperti interpolasi linier atau spline untuk membangun model yang menghubungkan titik-titik data tersebut. Model interpolasi ini kemudian digunakan untuk memperkirakan tingkat inflasi pada titik waktu yang diinginkan dengan memasukkan waktu tersebut ke dalam model, sehingga menghasilkan estimasi inflasi yang akurat. Metode ini sangat berguna dalam analisis ekonomi dan perencanaan keuangan untuk membuat prediksi yang tepat mengenai inflasi di masa depan."}
+                    : "Metode interpolasi digunakan untuk memperkirakan tingkat inflasi pada titik waktu yang belum ada datanya berdasarkan data historis yang tersedia. Proses ini dimulai dengan mengumpulkan data inflasi historis, kemudian menggunakan metode interpolasi linier untuk membangun model yang menghubungkan titik-titik data tersebut. Model interpolasi ini kemudian digunakan untuk memperkirakan tingkat inflasi pada titik waktu yang diinginkan dengan memasukkan waktu tersebut ke dalam model, sehingga menghasilkan estimasi inflasi yang akurat. Metode ini sangat berguna dalam analisis ekonomi dan perencanaan keuangan untuk membuat prediksi yang tepat mengenai inflasi di masa depan."}
                 </p>
                 <button
                   type="button"
