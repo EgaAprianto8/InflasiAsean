@@ -29,30 +29,38 @@ const Information = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-semibold"
             >
-              Our Algorithm
+              Our Dataset
             </motion.span>
-            <div className="ml-32">
+            <div className="">
               <motion.span
                 initial={{ y: -50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Is All YOU{" "}
-                <span className="font-bold text-[#1dbbb4]">NEED</span>
+                <span className="font-bold text-[#1dbbb4]">The World Bank</span>
               </motion.span>
             </div>
           </h1>
         </div>
-
-        <p className="w-full text-justify text-xl sm:text-center mt-4 px-8">
-          Unveiling the Unseen adalah website yang mengungkapkan implementasi
-          teknologi watermarking berbasis domain frekuensi dengan algoritma
-          Discrete Cosine Transform (DCT). Website ini memperkenalkan konsep
-          teknologi yang memberikan pemahaman jelas tentang bagaimana cara
-          penerapannya dalam menjaga keaslian serta integritas konten digital.
+        <Card className="h-full ">
+        <p className="w-full text-justify text-2xl mt-4 px-8">
+          Untuk menyediakan data yang akurat dan terpercaya mengenai inflasi di
+          negara-negara ASEAN, kami menggunakan dataset yang diperoleh dari The
+          World Bank. The World Bank adalah lembaga keuangan internasional yang
+          menyediakan berbagai data ekonomi dan statistik penting yang digunakan
+          oleh peneliti, pembuat kebijakan, dan analis di seluruh dunia. Dataset
+          ini mencakup berbagai indikator ekonomi termasuk tingkat inflasi, yang
+          diukur dan dilaporkan secara konsisten di semua negara anggota ASEAN.
+          Dengan menggunakan data dari The World Bank, kami memastikan bahwa
+          informasi yang disajikan di situs web ini berdasarkan sumber yang
+          kredibel dan diperbarui secara berkala, sehingga pengguna dapat
+          mengandalkan data ini untuk analisis dan pengambilan keputusan yang
+          lebih baik.
         </p>
+        </Card>
 
-        <div className="container mx-auto relative w-full h-full">
+
+        {/* <div className="container mx-auto relative w-full h-full">
           <div className="flex flex-col justify-center items-center w-full h- py-20">
             <div className="flex justify-around flex-col md:flex-row flex-wrap items-center gap-[50px] h-full">
               {[0, 1].map((index) => (
@@ -66,7 +74,7 @@ const Information = () => {
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       <p>
                         {index === 0
-                          ? "Transformasi ke Domain Frekuensi dengan DCT"
+                          ? "The World Bank "
                           : "Embedding dan Extraction Watermark"}
                       </p>
                     </h5>
@@ -76,7 +84,7 @@ const Information = () => {
                       }`}
                     >
                       {index === 0
-                        ? "Gambar digital diubah ke domain frekuensi menggunakan Algoritma Discrete Cosine Transform (DCT). Proses ini membagi gambar menjadi blok-blok kecil, dan setiap blok diubah ke domain frekuensi. Hasilnya adalah koefisien DCT untuk setiap blok, yang menggambarkan distribusi frekuensi dalam gambar. Koefisien ini menyimpan informasi tentang kontribusi setiap blok terhadap frekuensi dalam gambar."
+                        ? "."
                         : "Watermark disematkan ke dalam gambar dengan memanipulasi sebagian koefisien DCT. Proses ini dirancang untuk tidak secara signifikan mempengaruhi kualitas visual gambar. Saat gambar dengan watermark disimpan atau disebarkan, proses ekstraksi watermark dilakukan dengan menggunakan kembali DCT. Dari sini, informasi watermark dapat dipulihkan, memungkinkan identifikasi dan verifikasi keaslian gambar."}
                     </p>
                     <button
@@ -91,7 +99,7 @@ const Information = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="hidden sm:block absolute -bottom-0 -right-20 z-[-1]">
           <div className="relative aspect-square w-[608px] h-[656px]">
