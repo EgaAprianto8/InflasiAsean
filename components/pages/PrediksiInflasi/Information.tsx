@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Card } from "flowbite-react";
+import Link from "next/link";
 
 const Information = () => {
   const [showMore, setShowMore] = useState<Array<boolean>>([
@@ -11,6 +12,20 @@ const Information = () => {
     false,
     false,
   ]);
+
+  const countries = [
+    'Brunei',
+    'Cambodia',
+    'Indonesia',
+    'Laos',
+    'Malaysia',
+    'Myanmar',
+    'Philippines',
+    'Singapore',
+    'Thailand',
+    'Vietnam',
+    'TimorLeste'
+  ];
 
   // Fungsi untuk mengubah status showMore pada indeks tertentu
   const toggleShowMore = (index: number) => {
@@ -20,7 +35,25 @@ const Information = () => {
   };
   return (
     <section id="watermarking">
-      <div className="relative flex flex-col w-full px-4 sm:px-10 xl:container justify-center items-center my-20">
+      <div className="relative flex lg:flex-row flex-col gap-10 w-full px-4 sm:px-10 xl:container justify-center items-center my-20">
+      <div className="flex justify-center flex-col items-center min-h-screen lg:mt-56">
+        <h2 className="text-2xl font-semibold mb-4">ASEAN Countries</h2>
+        <p className="text-sm leading-relaxed text-gray-500 mb-8">
+          Select a country to visit its inflation prediction page:
+        </p>
+      <Card className="w-96  p-4">
+        <div className="space-y-2 flex flex-col gap-2">
+          {countries.map((country) => (
+            <Link key={country} href={`/PrediksiInflasi/${country}`}>
+              <button className="w-full bg-white border border-black rounded-xl py-2 text-left px-4 hover:bg-gray-100">
+                {country}
+              </button>
+            </Link>
+          ))}
+        </div>
+      </Card>
+    </div>
+    <div className="flex flex-col">
         <div className="container flex justify-center items-center mb-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl uppercase flex flex-col gap-y-2 text-center">
             <motion.span
@@ -29,30 +62,39 @@ const Information = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-semibold"
             >
-              Our Algorithm
+              Our Dataset
             </motion.span>
-            <div className="ml-32">
+            <div className="">
               <motion.span
                 initial={{ y: -50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Is All YOU{" "}
-                <span className="font-bold text-[#1dbbb4]">NEED</span>
+                <span className="font-bold text-[#1dbbb4]">The World Bank</span>
               </motion.span>
             </div>
           </h1>
         </div>
-
-        <p className="w-full text-justify text-xl sm:text-center mt-4 px-8">
-          Unveiling the Unseen adalah website yang mengungkapkan implementasi
-          teknologi watermarking berbasis domain frekuensi dengan algoritma
-          Discrete Cosine Transform (DCT). Website ini memperkenalkan konsep
-          teknologi yang memberikan pemahaman jelas tentang bagaimana cara
-          penerapannya dalam menjaga keaslian serta integritas konten digital.
+        <Card className="h-full ">
+        <p className="w-full text-justify sm:text-2xl mt-4 px-8">
+          Untuk menyediakan data yang akurat dan terpercaya mengenai inflasi di
+          negara-negara ASEAN, kami menggunakan dataset yang diperoleh dari The
+          World Bank. The World Bank adalah lembaga keuangan internasional yang
+          menyediakan berbagai data ekonomi dan statistik penting yang digunakan
+          oleh peneliti, pembuat kebijakan, dan analis di seluruh dunia. Dataset
+          ini mencakup berbagai indikator ekonomi termasuk tingkat inflasi, yang
+          diukur dan dilaporkan secara konsisten di semua negara anggota ASEAN.
+          Dengan menggunakan data dari The World Bank, kami memastikan bahwa
+          informasi yang disajikan di situs web ini berdasarkan sumber yang
+          kredibel dan diperbarui secara berkala, sehingga pengguna dapat
+          mengandalkan data ini untuk analisis dan pengambilan keputusan yang
+          lebih baik.
         </p>
+        </Card>
+    </div>
 
-        <div className="container mx-auto relative w-full h-full">
+
+        {/* <div className="container mx-auto relative w-full h-full">
           <div className="flex flex-col justify-center items-center w-full h- py-20">
             <div className="flex justify-around flex-col md:flex-row flex-wrap items-center gap-[50px] h-full">
               {[0, 1].map((index) => (
@@ -66,7 +108,7 @@ const Information = () => {
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       <p>
                         {index === 0
-                          ? "Transformasi ke Domain Frekuensi dengan DCT"
+                          ? "The World Bank "
                           : "Embedding dan Extraction Watermark"}
                       </p>
                     </h5>
@@ -76,7 +118,7 @@ const Information = () => {
                       }`}
                     >
                       {index === 0
-                        ? "Gambar digital diubah ke domain frekuensi menggunakan Algoritma Discrete Cosine Transform (DCT). Proses ini membagi gambar menjadi blok-blok kecil, dan setiap blok diubah ke domain frekuensi. Hasilnya adalah koefisien DCT untuk setiap blok, yang menggambarkan distribusi frekuensi dalam gambar. Koefisien ini menyimpan informasi tentang kontribusi setiap blok terhadap frekuensi dalam gambar."
+                        ? "."
                         : "Watermark disematkan ke dalam gambar dengan memanipulasi sebagian koefisien DCT. Proses ini dirancang untuk tidak secara signifikan mempengaruhi kualitas visual gambar. Saat gambar dengan watermark disimpan atau disebarkan, proses ekstraksi watermark dilakukan dengan menggunakan kembali DCT. Dari sini, informasi watermark dapat dipulihkan, memungkinkan identifikasi dan verifikasi keaslian gambar."}
                     </p>
                     <button
@@ -91,7 +133,7 @@ const Information = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="hidden sm:block absolute -bottom-0 -right-20 z-[-1]">
           <div className="relative aspect-square w-[608px] h-[656px]">

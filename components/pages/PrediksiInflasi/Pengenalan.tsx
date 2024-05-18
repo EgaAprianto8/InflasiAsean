@@ -24,15 +24,15 @@ const Pengenalan = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                <span className='font-bold text-[#1dbbb4]'>DISCRETE COSINE TRANSFORM (DCT)</span>
+                <span className='font-bold text-[#1dbbb4]'>ASEAN INFLATION</span>
               </motion.span>
             </h1>
             <div
               className="max-w-[800px] mx-auto p-6 sm:px-8 sm:py-12 rounded-md bg-white border border-gray-600 mt-4 md:[90px] lg:mt-[120px]"
             >
-              <h1 className="text-xl sm:text-2xl tracking-widest uppercase font-bold">Discrete Cosine Transform</h1>
+              <h1 className="text-xl sm:text-2xl tracking-widest uppercase font-bold">INFLASI ASEAN</h1>
               <p className="sm:text-lg max-w-2xl mt-4 mb-6 text-left sm:text-justify">
-                <span className="text-colorfull-blue font-semibold">DCT</span> Discrete Cosine Transform adalah teknik matematika yang mengubah data dari domain spasial ke domain frekuensi. <span className="text-[#1dbbb4] font-semibold">    DCT penting dalam pemrosesan sinyal dan gambar, terutama dalam kompresi gambar seperti JPEG, di mana ia redundansi data sehingga gambar dapat disimpan dengan ukuran lebih kecil tanpa kehilangan kualitas signifikan.</span>DCT juga digunakan dalam watermarking digital untuk menyembunyikan informasi dalam gambar, membantu melindungi hak cipta dan keaslian konten digital.
+                <span className="text-colorfull-blue font-semibold">INFLASI</span> mencerminkan laju kenaikan harga barang dan jasa, serta dampaknya pada daya beli. Memantau inflasi penting bagi pembuat kebijakan, bisnis, dan konsumen karena memengaruhi suku bunga, upah, dan stabilitas ekonomi.  <span className="text-[#1dbbb4] font-semibold">    ASEAN, yang terdiri dari Brunei, Kamboja, Indonesia, Laos, Malaysia, Myanmar, Filipina, Singapura, Thailand, dan Vietnam.</span> Memiliki ekonomi yang beragam dengan berbagai faktor yang mempengaruhi inflasi seperti permintaan, biaya produksi, harga impor, nilai tukar, dan kebijakan moneter. Mengamati tren inflasi di ASEAN membantu dalam pengambilan keputusan yang lebih baik untuk menjaga stabilitas ekonomi dan kesejahteraan masyarakat.
               </p>
             </div>
           </div>
